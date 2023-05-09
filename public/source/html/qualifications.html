@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/source/resources/Logo.png" />
+    <link rel="stylesheet" href="/source/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/source/resources/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/source/resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/source/resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="/source/resources/icons/manifest.json">
+    <link rel="mask-icon" href="/source/resources/icons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/source/resources/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/source/resources/icons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="My qualifications!">
+
+    <title>BI | My Qualifications</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="header-nav">
+                <h2 class="logo"><span>Qualifications</span></h2>
+                <ul>
+                    <li><a href="/../../index.html">Home</li></a>
+                    <li><a href="About-me.html">About Me</li></a>
+                    <li><a href=#qual>Qualifications</li></a>
+                    <li><a href="demos.html">Demos</li></a>
+                    <li><a href="contactus.html">Contact</li></a>    
+                </ul>
+                <button type="button">
+                    <a href="https://github.com/bilaal5279">
+                        <img src="/source/resources/github.svg" alt="Github repository icon">
+                    </a>
+                </button>
+    </nav>
+  </header>
+  <div id="qualification-content">
+    <section>
+        <img id="star" src="/source/resources/star.webp" alt="stars out of 5">
+        <h2 class="title" id="Qualifcation_name">My name is Bilaal Ishtiaq. </h2>
+        <p id="Corrections">I was given this page
+            and have corrected all the issues with the HTML
+            and the image on this page as part of my assessment.<p>
+    </section>
+    <section>
+        <h2 class="title">This table contains qualifications I have studied, and ones I am currently studying
+        </h2>
+        <table cellspacing="5" id="qual">
+            <tr>
+                <td>Level</td>
+                <td>Subject</td>
+                <td>Completion date</td>
+                <td>Result</td>
+            </tr>
+            <tr>
+                <td>A-level</td>
+                <td>Computuer Science</td>
+                <td>2022</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>A-level</td>
+                <td>Sociology</td>
+                <td>2022</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>BSC</td>
+                <td>Computer Science</td>
+                <td>2025</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+    </section>
+    <article>
+        <h2 class="title">I will have covered all of these subjects by the end of my first year at university:
+        </h2>
+        <ul>
+            <li>Programming languages</li>
+        </ul>
+        <ul>
+            <li>Python,</li>
+            <li>JavaScript,</li>
+            <li>C#</li>
+        </ul>
+        <ul>
+            <li>Networking,</li>
+            <li>Cybersecurity,</li>
+            <li>Digital technologies,</li>
+            <li>Web pages,</li>
+            <li>Operating systems</li>
+        </ul>
+    </article>
+    <footer id="qualificationfooter">My name is Bilaal Ishtiaq and I am studying a degree in Computer science at Staffordshire University</footer>
+</div>
+</div>
+
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('/../../serviceworker.js').then(
+                function(registration) {
+       console.log('Service worker registration successful',registration);
+                }, 
+                function(err) {
+               console.log('Service worker registration failed', err);
+            });
+        });
+    }
+    </script>
+</body>
+
+
+
+</html>

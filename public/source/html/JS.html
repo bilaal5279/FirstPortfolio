@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holding page for a future JS Demo</title>
+    <link href="styles.css" />
+  </head>
+  <body>
+    <p>Coming soon - My JS Demo!</p>
+
+    <script>
+      //check whether browser support service workers
+      if ("serviceWorker" in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener("load", function () {
+          //register service worker
+          navigator.serviceWorker.register("/../../serviceworker.js").then(
+            function (registration) {
+              console.log(
+                "Service worker registration successful",
+                registration
+              );
+            },
+            function (err) {
+              console.log("Service worker registration failed", err);
+            }
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

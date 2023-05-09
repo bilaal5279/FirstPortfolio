@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="/source/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/source/resources/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/source/resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/source/resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="/source/resources/icons/manifest.json">
+    <link rel="mask-icon" href="/source/resources/icons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/source/resources/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/source/resources/icons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" type="image/x-icon" href="/source/resources/Logo.png" />
+    <meta name="description" content="Who is Bilaal Ishtiaq?">
+    <title>BI |Contact us </title>
+</head>
+
+    
+<body>
+    <div class="container">
+        <header>
+            <nav class="header-nav">
+                <h2 class="logo">Bilaal <span>Ishtiaq</span></h2>
+                <ul>
+                    <li><a href="/../../index.html">Home</li></a>
+                    <li><a href="About-me.html">About Me</li></a>
+                    <li><a href="qualifications.html">Qualifications</li></a>
+                    <li><a href="demos.html">Demos</li></a>
+                    <li><a href="#">Contact</li></a>
+                </ul>
+                <button type="button" class="github">
+                    <a href="https://github.com/bilaal5279">
+                        <img src="/source/resources/github.svg" alt="Github repository icon">
+                    </a>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <div class="grid">
+                <div class="grid-area-2 m-top m-bottom">
+                   <h1>Contact Us</h1>
+                </div>
+                <div>
+                    <input class="form-element" placeholder="Enter First Name"/>
+                </div>
+                <div>
+                    <input class="form-element" placeholder="Enter Last Name"/>
+                </div>
+                <div class="grid-area-2">
+                    <input class="form-element" placeholder="Enter Email"/>
+                </div>
+                <div class="grid-area-2">
+                    <textarea class="form-element" placeholder="Enter Comments"></textarea>
+                </div>
+                <div class="grid-area-2">
+                    <button type="submit" class="btn-primary" mailto:="io39978m@student.staffs.ac.uk">Submit</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container2">
+                <nav id="footer">
+                    <div class="logo" id="logofooter">
+                        <h2>Bilaal <span>Ishtiaq</span></h2>
+                    </div>
+                    <div class="under-logo">
+                        <p> This website is for an assignment at Staffordshire University Web Dev and OS, StudentID :22039978 </p>
+                    </div>
+                    <div class="top-footer">
+                        <ul>
+                            <li><a href="/../../index.html">Home</a></li>
+                            <li><a href="/source/html/About-me.html">About Me</a></li>
+                            <li><a href="/source/html/qualifications.html">Qualifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-footer">
+                        <ul>
+                            <li><a href="/source/html/demos.html">Demos</a></li>
+                            <li><a href="/source/html/contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div id="button2">
+                        <button type="button">
+                            <a href="mailto:i039978m@student.staffs.ac.uk">
+                                <img class="email" src="/source/resources/email.svg" alt="Send Email">
+                            </a>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script>
+        //check whether browser support service workers
+        if ('serviceWorker' in navigator) {
+            //wait until page loaded to avoid delaying rendering
+            window.addEventListener('load', function() {
+                //register service worker
+                navigator.serviceWorker.register('/../../serviceworker.js').then(
+                    function(registration) {
+           console.log('Service worker registration successful',registration);
+                    }, 
+                    function(err) {
+                   console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+</body>
+
+</html>
